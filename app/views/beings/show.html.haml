@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Surname:
+  = @being.surname
+%p
+  %b Given name:
+  = @being.given_name
+%p
+  %b Age:
+  = @being.age
+%p
+  %b Alive:
+  = @being.alive
+%p
+  %b Title:
+  = @being.title
+%p
+  %b Gender:
+  = @being.gender
+%p
+  %b Ancestry:
+  = @being.ancestry
+
+= link_to 'Edit', edit_being_path(@being)
+\|
+= link_to 'Back', beings_path

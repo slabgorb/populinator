@@ -1,4 +1,6 @@
 Populinator::Application.routes.draw do
+  resources :settlements
+
   resources :beings
 
   # The priority is based upon order of creation: first created -> highest priority.

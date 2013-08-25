@@ -1,0 +1,27 @@
+%h1 Listing settlements
+
+%table
+  %tr
+    %th Icon
+    %th Color
+    %th Name
+    %th Language
+    %th Ancestry
+    %th
+    %th
+    %th
+
+  - @settlements.each do |settlement|
+    %tr
+      %td= settlement.icon
+      %td= settlement.color
+      %td= settlement.name
+      %td= settlement.language_id
+      %td= settlement.ancestry
+      %td= link_to 'Show', settlement
+      %td= link_to 'Edit', edit_settlement_path(settlement)
+      %td= link_to 'Destroy', settlement, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Settlement', new_settlement_path

@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Icon:
+  = @settlement.icon
+%p
+  %b Color:
+  = @settlement.color
+%p
+  %b Name:
+  = @settlement.name
+%p
+  %b Language:
+  = @settlement.language_id
+%p
+  %b Ancestry:
+  = @settlement.ancestry
+
+= link_to 'Edit', edit_settlement_path(@settlement)
+\|
+= link_to 'Back', settlements_path

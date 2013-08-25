@@ -1,0 +1,21 @@
+%h1 Listing corpora
+
+%table
+  %tr
+    %th Name
+    %th Url
+    %th
+    %th
+    %th
+
+  - @corpora.each do |corpus|
+    %tr
+      %td= corpus.name
+      %td= corpus.url
+      %td= link_to 'Show', corpus
+      %td= link_to 'Edit', edit_corpus_path(corpus)
+      %td= link_to 'Destroy', corpus, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Corpus', new_corpus_path

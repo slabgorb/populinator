@@ -1,4 +1,8 @@
 Populinator::Application.routes.draw do
+  resources :languages
+
+  resources :corpora
+
   resources :settlements
 
   resources :beings

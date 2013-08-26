@@ -16,6 +16,7 @@ gem 'font-awesome-rails'
 gem 'paperclip'
 gem 'ancestry'
 gem 'gravatar_image_tag'
+gem 'simple_form', '>= 3.0.0.rc'
 
 gem "cancan"
 

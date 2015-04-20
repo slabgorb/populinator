@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  language_id: 1
   name: MyString
   url: MyString
 
 two:
+  language_id: 1
   name: MyString
   url: MyString

@@ -69,6 +69,6 @@ class CorporaController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def corpus_params
-      params.require(:corpus).permit(:name, :url)
+      params.require(:corpus).permit(:language_id, :name, :url)
     end
 end

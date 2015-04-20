@@ -1,8 +1,9 @@
 Populinator::Application.routes.draw do
-  devise_for :users
-  resources :languages
 
-  resources :corpora
+  devise_for :users
+  resources :languages do
+    resources :corpora
+  end
 
   resources :settlements
 

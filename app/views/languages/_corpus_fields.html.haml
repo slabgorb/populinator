@@ -1,0 +1,7 @@
+.form-inputs
+  = f.input :name, required: true
+  = f.input :url, required: true
+  %p.label
+    destroy
+    = f.check_box :_destroy
+

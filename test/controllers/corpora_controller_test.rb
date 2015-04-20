@@ -18,7 +18,7 @@ class CorporaControllerTest < ActionController::TestCase
 
   test "should create corpus" do
     assert_difference('Corpus.count') do
-      post :create, corpus: { name: @corpus.name, url: @corpus.url }
+      post :create, corpus: { language_id: @corpus.language_id, name: @corpus.name, url: @corpus.url }
     end
 
     assert_redirected_to corpus_path(assigns(:corpus))
@@ -35,7 +35,7 @@ class CorporaControllerTest < ActionController::TestCase
   end
 
   test "should update corpus" do
-    patch :update, id: @corpus, corpus: { name: @corpus.name, url: @corpus.url }
+    patch :update, id: @corpus, corpus: { language_id: @corpus.language_id, name: @corpus.name, url: @corpus.url }
     assert_redirected_to corpus_path(assigns(:corpus))
   end
 
